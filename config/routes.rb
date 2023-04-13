@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+  root 'api/v1/movies#read_csv'
 
   namespace 'api' do
     namespace 'v1' do
@@ -6,6 +7,6 @@ Rails.application.routes.draw do
     end
   end
 
-  get 'api/v1/movies/read_csv'
+  # get 'api/v1/movies/read_csv'
 
 end
