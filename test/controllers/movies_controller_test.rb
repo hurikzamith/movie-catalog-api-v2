@@ -1,4 +1,15 @@
-# require 'rails_helper'
+require 'rails_helper'
+# require "test_helper"
+# require "rails/test_help"
+# require "minitest/autorun"
+
+class MoviesApiTest < ActionDispatch::IntegrationTest
+  # Your test cases will go here
+  test "should get list of movies" do
+    get "/api/v1/movies"
+    assert_response :success
+  end
+end
 
 # describe 'MovieController', type: :request do
 #   context 'index' do

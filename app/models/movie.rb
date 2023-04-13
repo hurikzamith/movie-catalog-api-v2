@@ -1,3 +1,3 @@
 class Movie < ApplicationRecord
-  # validates :title, uniqueness:
+  validates :title, uniqueness: true
 end
