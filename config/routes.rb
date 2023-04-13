@@ -5,10 +5,6 @@ Rails.application.routes.draw do
     end
   end
 
-  namespace 'api' do
-    namespace 'v1' do
-      get 'movies/read_csv'
-    end
-  end
+  get 'api/v1/movies/read_csv'
 
 end

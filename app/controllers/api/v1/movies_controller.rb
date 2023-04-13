@@ -11,7 +11,10 @@ class Api::V1::MoviesController < ApplicationController
   end
 
   def index
-    render json: {}, status: 200
+    @movies = Movie.order(year: :asc)
+    @movies = @movies.where(year: params[:year]) if params[:year].present?
+    @movies = @movies.where(genre: params[:genre]) if params[:genre].present?
+    @movies = @movies.where(country: params[:country]) if params[:country].present?
+    render json: @movies
   end
-
 end
