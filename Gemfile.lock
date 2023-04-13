@@ -105,6 +105,13 @@ GEM
       railties (>= 3.2)
     erubi (1.12.0)
     execjs (2.8.1)
+    factory_bot (6.2.1)
+      activesupport (>= 5.0.0)
+    factory_bot_rails (6.2.0)
+      factory_bot (~> 6.2.0)
+      railties (>= 5.0.0)
+    faker (3.1.1)
+      i18n (>= 1.8.11, < 2)
     ffi (1.15.5)
     font-awesome-sass (6.4.0)
       sassc (~> 2.0)
@@ -186,10 +193,6 @@ GEM
     reline (0.3.3)
       io-console (~> 0.5)
     rexml (3.2.5)
-    rspec (3.12.0)
-      rspec-core (~> 3.12.0)
-      rspec-expectations (~> 3.12.0)
-      rspec-mocks (~> 3.12.0)
     rspec-core (3.12.1)
       rspec-support (~> 3.12.0)
     rspec-expectations (3.12.2)
@@ -198,6 +201,14 @@ GEM
     rspec-mocks (3.12.5)
       diff-lcs (>= 1.2.0, < 2.0)
       rspec-support (~> 3.12.0)
+    rspec-rails (6.0.1)
+      actionpack (>= 6.1)
+      activesupport (>= 6.1)
+      railties (>= 6.1)
+      rspec-core (~> 3.11)
+      rspec-expectations (~> 3.11)
+      rspec-mocks (~> 3.11)
+      rspec-support (~> 3.11)
     rspec-support (3.12.0)
     rubyzip (2.3.2)
     sassc (2.4.0)
@@ -257,6 +268,8 @@ DEPENDENCIES
   csv
   debug
   dotenv-rails
+  factory_bot_rails
+  faker
   font-awesome-sass (~> 6.1)
   jbuilder
   jsbundling-rails
@@ -264,7 +277,7 @@ DEPENDENCIES
   puma (~> 5.0)
   rails (~> 7.0.4, >= 7.0.4.3)
   redis (~> 4.0)
-  rspec
+  rspec-rails
   sassc-rails
   selenium-webdriver
   simple_form!
