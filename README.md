@@ -1,31 +1,37 @@
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
 # TODO - COMPLETAR README
 <h1>Catálogo de Filmes</h1>
-Este é um aplicativo Rails que fornece uma API RESTful para o catálogo de filmes. Ele permite importar filmes a partir de um arquivo CSV e listar os filmes cadastrados em formato JSON, permitindo a filtragem por ano de lançamento, gênero, país, etc.
+Este é um aplicativo Rails que fornece uma API RESTful para o catálogo de filmes. Ele permite importar filmes a partir de um arquivo CSV por um endpoint e listar os filmes cadastrados em formato JSON, permitindo a filtragem por ano de lançamento, gênero, país, etc.
 
 <h1>Configuração</h1>
 
 Este projeto requer Ruby e Rails instalados na máquina.
+Além de algumas "gems" não tão usuais, como kaminari. Relembramos de rodar todas as migrações e bundle install após clonagem.
 
 <h1>Utilização</h1>
 
+ *Os métodos abaixo foram testados na plataforma Postman
+
 <h3>Para importar filmes do arquivo CSV, execute:</h3>
 
- -
+ - GET /api/v1/movies/read_csv
+
 <h3>Para listar todos os filmes cadastrados em formato JSON, execute:</h3>
 
- - GET /movies
+ - GET /api/v1/movies
 
 <h3>Para filtrar os filmes por ano de lançamento, gênero, país, etc., use os parâmetros de consulta:</h3>
 
-- GET /movies?year=2021&genre=Drama&country=United%20States
+- GET //api/v1/movies?genre=Dramas,%20Romantic%20Movies&year=1993
+
+Relembre comandos de query:
 
 <h3>A resposta seguirá o seguinte padrão:</h3>
 
 - {
   "movies": [
 {
-"id": 93,
+"id":"c9cc42c4bc23d51d135d9a8436dbbe6c",,
 "title": "A Clockwork Orange",
 "genre": "Classic Movies, Cult Movies, Dramas",
 "year": "1971",
