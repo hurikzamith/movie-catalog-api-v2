@@ -15,6 +15,15 @@ class Api::V1::MoviesController < ApplicationController
     movies = movies.where(year: params[:year]) if params[:year].present?
     movies = movies.where(genre: params[:genre]) if params[:genre].present?
     movies = movies.where(country: params[:country]) if params[:country].present?
-    render json: movies
+    movies = movies.where(title: params[:title]) if params[:title].present?
+
+    movies = movies.page(params[:page]).per(params[:per_page])
+
+    render json: {
+      movies: movies,
+      current_page: movies.current_page,
+      total_pages: movies.total_pages,
+      total_count: movies.total_count
+    }
   end
 end
