@@ -10,8 +10,8 @@ Este projeto requer Ruby e Rails instalados na máquina.
 <h1>Utilização</h1>
 
 <h3>Para importar filmes do arquivo CSV, execute:</h3>
- 
- - 
+
+ -
 <h3>Para listar todos os filmes cadastrados em formato JSON, execute:</h3>
 
  - GET /movies
@@ -19,10 +19,11 @@ Este projeto requer Ruby e Rails instalados na máquina.
 <h3>Para filtrar os filmes por ano de lançamento, gênero, país, etc., use os parâmetros de consulta:</h3>
 
 - GET /movies?year=2021&genre=Drama&country=United%20States
- 
+
 <h3>A resposta seguirá o seguinte padrão:</h3>
 
-- "movies": [
+- {
+  "movies": [
 {
 "id": 93,
 "title": "A Clockwork Orange",
