@@ -11,14 +11,22 @@ class Api::V1::MoviesController < ApplicationController
   end
 
   def index
+
+    # Movies in ascendent order by year
     movies = Movie.order(year: :asc)
+
+    # Allows queries to filter by attribute
     movies = movies.where(year: params[:year]) if params[:year].present?
     movies = movies.where(genre: params[:genre]) if params[:genre].present?
     movies = movies.where(country: params[:country]) if params[:country].present?
     movies = movies.where(title: params[:title]) if params[:title].present?
+    movies = movies.where(published_at: params[:published_at]) if params[:published_at].present?
+    movies = movies.where(description: params[:description]) if params[:description].present?
 
+    # Paginates the API JSON presentation (kaminari gem)
     movies = movies.page(params[:page]).per(params[:per_page])
 
+    # Renders movies and displays current page
     render json: {
       movies: movies,
       current_page: movies.current_page,
