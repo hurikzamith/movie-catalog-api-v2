@@ -1,4 +1,5 @@
 Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
+# TODO - COMPLETAR README
 <h1>Catálogo de Filmes</h1>
 Este é um aplicativo Rails que fornece uma API RESTful para o catálogo de filmes. Ele permite importar filmes a partir de um arquivo CSV e listar os filmes cadastrados em formato JSON, permitindo a filtragem por ano de lançamento, gênero, país, etc.
 
@@ -9,7 +10,8 @@ Este projeto requer Ruby e Rails instalados na máquina.
 <h1>Utilização</h1>
 
 <h3>Para importar filmes do arquivo CSV, execute:</h3>
-
+ 
+ - 
 <h3>Para listar todos os filmes cadastrados em formato JSON, execute:</h3>
 
  - GET /movies
