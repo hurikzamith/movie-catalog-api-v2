@@ -1,6 +1,5 @@
-Rails app generated with [lewagon/rails-templates](https://github.com/lewagon/rails-templates), created by the [Le Wagon coding bootcamp](https://www.lewagon.com) team.
-# TODO - COMPLETAR README
-<h1>Catálogo de Filmes</h1>
+<h1>Movie Catalog API</h1>
+
 Este é um aplicativo Rails que fornece uma API RESTful para o catálogo de filmes. Ele permite importar filmes a partir de um arquivo CSV por um endpoint e listar os filmes cadastrados em formato JSON, permitindo a filtragem por ano de lançamento, gênero, país, etc.
 
 <h1>Configuração</h1>
@@ -10,21 +9,23 @@ Além de algumas "gems" não tão usuais, como kaminari. Relembramos de rodar to
 
 <h1>Utilização</h1>
 
- *Os métodos abaixo foram testados na plataforma Postman
+ - Os métodos abaixo foram testados na plataforma Postman
 
 <h3>Para importar filmes do arquivo CSV, execute:</h3>
 
- - GET /api/v1/movies/read_csv
+ > GET /api/v1/movies/read_csv
 
 <h3>Para listar todos os filmes cadastrados em formato JSON, execute:</h3>
 
- - GET /api/v1/movies
+ > GET /api/v1/movies
 
 <h3>Para filtrar os filmes por ano de lançamento, gênero, país, etc., use os parâmetros de consulta:</h3>
 
-- GET //api/v1/movies?genre=Dramas,%20Romantic%20Movies&year=1993
+Exemplo:
 
-Relembre comandos de query:
+> GET //api/v1/movies?genre=Dramas,%20Romantic%20Movies&year=1993
+
+
 
 <h3>A resposta seguirá o seguinte padrão:</h3>
 
@@ -47,19 +48,36 @@ Relembre comandos de query:
 "total_count": 131
 }
 
+![image](https://user-images.githubusercontent.com/93097561/232227948-be658d88-60d3-4c84-b2f1-9ba98f6c355a.png)
+
+
+<h1>Exemplo de Utilização</h1> 
+
+O Aplicativo "Importer Movie" encontrado neste link: https://github.com/hurikzamith/importer-movie, foi criado apenas com intuito de fazer uso desta API. 
+Os dados foram facilmente importados da seguinte maneira: 
+
+
+![seed](https://user-images.githubusercontent.com/93097561/232227798-f9e1c8bf-96b4-4509-a918-827fd67e0ce7.png)
+
+![image](https://user-images.githubusercontent.com/93097561/232227900-bdb35090-65ee-451f-8664-64764d93515b.png)
+
+![image](https://user-images.githubusercontent.com/93097561/232228164-10cdd6c0-f7fc-4d51-b14c-0c550ac32c82.png)
+
+
+
 <h1>Testes</h1>
 Para executar os testes do projeto, execute:
 
-- rails test
+> rails test
 
 <h1>Contribuição</h1>
 Este é um projeto de código aberto e estamos abertos a contribuições. Para contribuir, siga as etapas abaixo:
 
-- Crie um fork deste projeto.
-- Crie uma nova branch com suas alterações: git checkout -b minha-branch
-- Faça commit das suas alterações: git commit -am 'Minhas alterações'
-- Faça push para a branch: git push origin minha-branch
-- Abra um pull request
+> Crie um fork deste projeto.
+> Crie uma nova branch com suas alterações: git checkout -b minha-branch
+> Faça commit das suas alterações: git commit -am 'Minhas alterações'
+> Faça push para a branch: git push origin minha-branch
+> Abra um pull request
 
 <h1>Licença</h1>
 Este projeto está licenciado sob a Licença MIT. Consulte o arquivo LICENSE.md para obter mais informações.
