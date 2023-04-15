@@ -61,9 +61,10 @@ Os dados foram facilmente importados da seguinte maneira:
 ![image](https://user-images.githubusercontent.com/93097561/232249702-c6de8beb-8380-47e6-999d-14fa4d8eddba.png)
 
 
-![image](https://user-images.githubusercontent.com/93097561/232252372-09ddb358-1dfa-436b-9937-4edd8d2cedf8.png)
 
-![image](https://user-images.githubusercontent.com/93097561/232252390-ff697c30-bbe4-4769-8c6c-86dd7c2ea9e8.png)
+
+https://user-images.githubusercontent.com/93097561/232254161-8756607a-3632-4f26-9853-74e0d1c77555.mp4
+
 
 
 
