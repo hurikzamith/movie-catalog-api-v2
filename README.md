@@ -28,6 +28,14 @@ Exemplo:
 > GET //api/v1/movies?page=1
 
 
+
+
+https://user-images.githubusercontent.com/93097561/232255909-3cb92734-04fb-4755-b3e3-414a322e213d.mp4
+
+
+
+
+
 <h3>A resposta seguirá o seguinte padrão:</h3>
 
 - {
