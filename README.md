@@ -25,6 +25,7 @@ Exemplo:
 
 > GET //api/v1/movies?genre=Dramas,%20Romantic%20Movies&year=1993
 
+> GET //api/v1/movies?page=1
 
 
 <h3>A resposta seguirá o seguinte padrão:</h3>
@@ -48,7 +49,7 @@ Exemplo:
 "total_count": 131
 }
 
-![image](https://user-images.githubusercontent.com/93097561/232227948-be658d88-60d3-4c84-b2f1-9ba98f6c355a.png)
+![image](https://user-images.githubusercontent.com/93097561/232249738-08f173ef-c551-456b-895c-8e605e71c407.png)
 
 
 <h1>Exemplo de Utilização</h1> 
@@ -57,11 +58,13 @@ O Aplicativo "Importer Movie" encontrado neste link: https://github.com/hurikzam
 Os dados foram facilmente importados da seguinte maneira: 
 
 
-![seed](https://user-images.githubusercontent.com/93097561/232227798-f9e1c8bf-96b4-4509-a918-827fd67e0ce7.png)
+![image](https://user-images.githubusercontent.com/93097561/232249702-c6de8beb-8380-47e6-999d-14fa4d8eddba.png)
+
 
 ![image](https://user-images.githubusercontent.com/93097561/232227900-bdb35090-65ee-451f-8664-64764d93515b.png)
 
 ![image](https://user-images.githubusercontent.com/93097561/232228164-10cdd6c0-f7fc-4d51-b14c-0c550ac32c82.png)
+
 
 
 
