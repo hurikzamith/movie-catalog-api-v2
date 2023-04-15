@@ -69,9 +69,39 @@ Os dados foram facilmente importados da seguinte maneira:
 
 
 <h1>Testes</h1>
-Para executar os testes do projeto, execute:
+Classe MovieTest (testes de unidade):
+
+<h3>Testa o modelo Movie;</h3>
+
+- Garante que o modelo se comporte conforme o esperado;
+
+- Testa se um filme pode ser criado com atributos válidos;
+
+- Testa se um filme com título duplicado não pode ser criado;
+
+- Testa se um filme deve ter um título.
+
+- Classe MoviesControllerTest (testes de integração):
+
+<h3>Testa o MoviesController;</h3>
+
+- Garante que o controller se comporte conforme o esperado;
+
+- Testa se a ação index retorna uma lista de filmes com informações de paginação;
+
+- Testa se os filmes podem ser filtrados por ano, título, gênero e país.
+
+<h3>Importância dos testes:</h3>
+
+Garante o correto funcionamento do aplicativo;
+Ajuda a detectar bugs;
+Garante que o aplicativo atenda aos requisitos do usuário.
+
+<h3>Para executar os testes do projeto, execute:</h3>
 
 > rails test
+
+
 
 <h1>Contribuição</h1>
 Este é um projeto de código aberto e estamos abertos a contribuições. Para contribuir, siga as etapas abaixo:
